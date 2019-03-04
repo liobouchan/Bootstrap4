@@ -7,11 +7,32 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/login.css">
 
     <title>AllGood.io</title>
   </head>
-  <body>
+  <body class="text-center">
+    <form class="form-signin border rounded">
+        <img class="mb-4" src="http://placehold.it/150x50?text=Logo" alt="" width="72" height="72">
+
+        <h1 class="h3 mb-3 font-weight-normal">Entrar a AllGood</h1>
+
+        <label for="inputEmail" class="sr-only">Usuario</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="recordar"> Recordarme
+            </label>
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block mb-5" type="submit">Log in</button>
+        <hr>
+        <p class="mt-5 mb-3 text-muted">by Rhisco</p>
+    </form>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
