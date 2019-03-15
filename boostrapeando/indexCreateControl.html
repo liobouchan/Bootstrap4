@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v2.1.12
+* @link https://coreui.io
+* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>AllGood</title>
+    <!-- Icons-->
+    <link href="node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="css/styleMod.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
+  </head>
+  <body class="app header-fixed">
+    <header class="app-header navbar bg-dark">
+                <!--LOGO-->
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-brand-full" src="https://rhisco.com/wp-content/themes/Rhisco/assets/img/logo.png" width="89" height="25" alt="Logo">
+                    <img class="navbar-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="Logo">
+                </a>
+                
+                <!--Texto NavBar-->
+                <ul class="nav navbar-nav d-md-down-none">
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="indexGraph.html">Leer regulación</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="indexCreateControl.html">Agregar Controles</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="indexTulipan.html">Controles Recomendados</a>
+                    </li>
+                </ul>
+        
+                <!--Iconos-->
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item d-md-down-none">
+                        <a class="nav-link" href="#">
+                            <i class="icon-bell"></i>
+                             <span class="badge badge-pill badge-danger">5</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <img class="img-avatar" src="https://muliaasrijogja.com/wp-content/uploads/2018/01/2754579.png" alt="admin@bootstrapmaster.com">
+                        </a>
+        
+                        <!--Inside DropDownMenu Avatar-->
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-header text-center">
+                                <strong>Account</strong>
+                            </div>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-bell-o"></i> Updates
+                                <span class="badge badge-info">42</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-envelope-o"></i> Messages
+                                <span class="badge badge-success">42</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-tasks"></i> Tasks
+                                <span class="badge badge-danger">42</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-comments"></i> Comments
+                                <span class="badge badge-warning">42</span>
+                            </a>
+                            <div class="dropdown-header text-center">
+                                <strong>Settings</strong>
+                            </div>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-user"></i> Profile</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-wrench"></i> Settings</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-usd"></i> Payments
+                                <span class="badge badge-secondary">42</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-file"></i> Projects
+                                <span class="badge badge-primary">42</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-shield"></i> Lock Account</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-lock"></i> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+    </header>
+    <div class="app-body">
+        <div class="col-md-12">
+                <div class="card">
+                        <div class="card-header">
+                          <strong>Basic Form</strong> Elements</div>
+                        <div class="card-body">
+                          <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+                            <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="select1">Artículo</label>
+                                    <div class="col-md-9">
+                                      <select class="form-control" id="select1" name="select1">
+                                        <option value="0">Seleccionar</option>
+                                        <option value="1">Artículo 2</option>
+                                        <option value="2">Artículo 2 Bis</option>
+                                        <option value="3">Artículo 2 Bis 1</option>
+                                      </select>
+                                    </div>
+                             </div>
+                             <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="disabled-input">Título</label>
+                                    <div class="col-md-9">
+                                      <input class="form-control" id="disabled-input" type="text" name="disabled-input" placeholder="" disabled="">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="disabled-input">Capítulo</label>
+                                    <div class="col-md-9">
+                                      <input class="form-control" id="disabled-input" type="text" name="disabled-input" placeholder="" disabled="">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="disabled-input">Sección</label>
+                                    <div class="col-md-9">
+                                      <input class="form-control" id="disabled-input" type="text" name="disabled-input" placeholder="" disabled="">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="disabled-input">Apartado</label>
+                                    <div class="col-md-9">
+                                      <input class="form-control" id="disabled-input" type="text" name="disabled-input" placeholder="" disabled="">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="disabled-input">Sub apartado</label>
+                                    <div class="col-md-9">
+                                      <input class="form-control" id="disabled-input" type="text" name="disabled-input" placeholder="" disabled="">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="textarea-input">Control</label>
+                                    <div class="col-md-9">
+                                      <textarea class="form-control" id="textarea-input" name="textarea-input" rows="9" placeholder="Escribe el control.."></textarea>
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="textarea-input">Objetivo de Control</label>
+                                    <div class="col-md-9">
+                                      <textarea class="form-control" id="textarea-input" name="textarea-input" rows="9" placeholder="Escribe el objetivo.."></textarea>
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Método</label>
+                                    <div class="col-md-9 col-form-label">
+                                      <div class="form-check">
+                                        <input class="form-check-input" id="radio1" type="radio" value="radio1" name="radios">
+                                        <label class="form-check-label" for="radio1">Automático</label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" id="radio2" type="radio" value="radio2" name="radios">
+                                        <label class="form-check-label" for="radio2">Manual</label>
+                                      </div>
+                                    </div>
+                            </div>
+
+                            <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="multiple-select">Tags</label>
+                                    <div class="col-md-9">
+                                      <select class="form-control" id="multiple-select" name="multiple-select" size="5" multiple="">
+                                        <option value="1">Arrendadora</option>
+                                        <option value="2">Legal</option>
+                                        <option value="3">Contable</option>
+                                        <option value="4">Banca</option>
+                                        <option value="5">Aseguradora</option>
+                                        <option value="6">Más</option>
+                                      </select>
+                                    </div>
+                                </div>
+                           
+                            
+                          </form>
+                        </div>
+                        <div class="card-footer">
+                          <button class="btn btn-sm btn-primary" type="submit">
+                            <i class="fa fa-dot-circle-o"></i> Guardar</button>
+                          <button class="btn btn-sm btn-danger" type="reset">
+                            <i class="fa fa-ban"></i> Reset</button>
+                        </div>
+                      </div>
+        </div>
+    </div>
+    <footer class="app-footer">
+      <div>
+        <a href="https://www.rhisco.com">AllGood</a>
+        <span>&copy; 2019 Rhisco</span>
+      </div>
+      <div class="ml-auto">
+        <span>Powered by</span>
+        <a href="https://www.rhisco.com">Rhisco</a>
+      </div>
+    </footer>
+    <!-- CoreUI and necessary plugins-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/pace-progress/pace.min.js"></script>
+    <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
